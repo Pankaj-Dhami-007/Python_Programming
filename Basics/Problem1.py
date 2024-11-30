@@ -1,0 +1,5 @@
+print('''
+      (Updated for Azure Trusted Signing, which applies for all releases chronologically from 3.14.0a1)
+The Windows installers and all binaries produced as part of each Python release are signed using an Authenticode signing certificate issued to the Python Software Foundation. This can be verified by viewing the properties of any executable file, looking at the Digital Signatures tab, and confirming the name of the signer. Our full certificate subject is CN = Python Software Foundation, O = Python Software Foundation, L = Beaverton, S = Oregon, C = US and as of 14th October 2024 the certificate authority is Microsoft Identity Verification Root Certificate Authority. Our previous certificates were issued by DigiCert.
+Note that some executables may not be signed, notably, the default pip command. These are not built as part of Python, but are included from third-party libraries. Files that are intended to be modified before use cannot be signed and so will not have a signature.
+      ''')
